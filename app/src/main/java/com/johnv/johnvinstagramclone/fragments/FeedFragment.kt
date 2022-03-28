@@ -26,7 +26,7 @@ open class FeedFragment : Fragment() {
     var allPosts: ArrayList<Post> = ArrayList()
 
     lateinit var swipeContainer: SwipeRefreshLayout
-    
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

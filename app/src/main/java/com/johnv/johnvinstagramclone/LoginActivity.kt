@@ -35,24 +35,15 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun signUpUser(username: String, password: String){
-        // Create the ParseUser
-        // Create the ParseUser
+
         val user = ParseUser()
-        // Set core properties
-        // Set core properties
+
         user.setUsername(username)
         user.setPassword(password)
-        //user.setEmail(email)
-        // Set custom properties
-        // Set custom properties
-        //user.put("phone", phone)
-        // Invoke signUpInBackground
-        // Invoke signUpInBackground
         user.signUpInBackground { e ->
             if (e == null) {
                 // user has successfully created a new account
 
-                // TODO: Navigate user to MainActivity and show a toast
                 Toast.makeText(this, "Account Successfully Created", Toast.LENGTH_SHORT).show()
                 goToMainActivity()
 
